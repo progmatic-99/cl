@@ -1,0 +1,106 @@
+$bg-color: #05053c;
+$hover-color: #f1a02d;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  background-color: $bg-color;
+}
+
+.navbar {
+  background-color: $bg-color;
+  margin-top: 1.5rem;
+
+  .navbar-toggler {
+    .navbar-toggler-icon {
+      border-color: white;
+    }
+  }
+
+  .navbar-brand {
+    color: white;
+    margin-left: 0.5rem;
+
+    &:hover {
+      color: $hover-color;
+    }
+    #logo {
+      border-radius: 12px;
+      margin-left: 3rem;
+    }
+  }
+
+  .nav-items {
+    .navbar-nav {
+      .nav-item {
+        .nav-link:hover {
+          color: $hover-color;
+        }
+      }
+      .nav-link {
+        font-size: 24px;
+        color: white;
+        :hover {
+          color: $hover-color;
+        }
+      }
+      .nav-item.active {
+        .nav-link {
+          color: $hover-color;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .art {
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    figure {
+      img {
+        width: 518px;
+        height: 452px;
+        border-radius: 47px;
+      }
+    }
+  }
+
+  .text {
+    h1 {
+      color: white;
+      font-weight: 800;
+    }
+    .btn {
+      background-color: $hover-color;
+      color: white;
+      border-radius: 24px;
+      margin-top: 2rem;
+
+      &:hover {
+        color: $hover-color;
+        background-color: white;
+      }
+    }
+
+    .menu {
+      border-radius: 24px;
+      color: $hover-color;
+      background-color: white;
+      margin-left: 1rem;
+      // font-size: 1.25rem;
+      // margin: 5rem 0 0 0;
+      &:hover {
+        color: white;
+        background-color: $hover-color;
+      }
+    }
+  }
+}
