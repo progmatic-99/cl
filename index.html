@@ -16,12 +16,16 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/7b15d2d2ab.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="index.css" />
     <link rel="icon" href="./logo.jpeg" />
     <title>Chef's Lounge</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-md">
       <a class="navbar-brand" href="#">
         <img
           id="logo"
@@ -41,7 +45,7 @@
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon">
-          <i class="fas fa-bars"></i>
+          <i class="fas fa-bars" style="color: white"></i>
         </span>
       </button>
 
@@ -71,17 +75,290 @@
         </figure>
       </div>
       <div class="text">
-        <h1>
-          Drink, Eat Food &<br />
-          Enjoy with<br />
-          your Family.
-        </h1>
-        <button href="#book" type="button" class="btn btn-lg">
-          Book Now!!
-        </button>
-        <button href="#menu" type="button" class="btn btn-lg menu">
-          See Menu
-        </button>
+        <div class="head">
+          <h1>Drink, Eat Food & Enjoy with your Family.</h1>
+        </div>
+        <div class="buttons">
+          <button href="#book" type="button" class="btn btn-lg">
+            Book Now!!
+          </button>
+          <button href="#menu" type="button" class="btn btn-lg menu">
+            See Menu
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="book">
+      <form class="needs-validation" novalidate>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationCustom01">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom01"
+              placeholder="Your name"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Book</button>
+      </form>
+    </section>
+    <section id="menu">
+      <div class="dish table1">
+        <table class="list">
+          <th>ENTREE</th>
+          <tr>
+            <td class="dish-name">GARLIC BREAD</td>
+            <td class="price">3.00</td>
+          </tr>
+          <tr>
+            <td>add cheese</td>
+            <td class="price">2.00</td>
+          </tr>
+          <tr>
+            <td class="dish-name">CRUMBED S&P SQUID</td>
+            <td class="price">13.00</td>
+          </tr>
+          <tr>
+            <td>
+              Calameri rings dusted with salt and<br />pepper and served with
+              chips and Aioli
+            </td>
+          </tr>
+          <tr>
+            <td class="dish-name">COCKTAIL MEATBALLS</td>
+            <td class="price">9.00</td>
+          </tr>
+          <tr>
+            <td>Cooked in red sauce and bread roll</td>
+          </tr>
+          <tr>
+            <td class="dish-name">LOADED BACON &<br />CHEESE FRIES</td>
+            <td class="price">10.00</td>
+          </tr>
+          <tr>
+            <td>Cooked bacon & melted cheese</td>
+          </tr>
+          <tr>
+            <td class="dish-name">SOUP OF THE day</td>
+            <td class="price">9.00</td>
+          </tr>
+          <tr>
+            <td>Homemade soup served with bread roll</td>
+          </tr>
+        </table>
+      </div>
+      <div class="dish table2">
+        <table class="list">
+          <th>Seafood</th>
+          <tr>
+            <td class="dish-name">boneless fish & chips</td>
+            <td class="price">M-10.00</td>
+          </tr>
+          <tr>
+            <td>Side of garden salad & chips</td>
+            <td class="price">L-16.00</td>
+          </tr>
+          <tr>
+            <td class="dish-name">barramundi</td>
+            <td class="price">23.00</td>
+          </tr>
+          <tr>
+            <td>
+              Serve with lemon & butter sage sauce<br />with side of your choice
+            </td>
+          </tr>
+          <tr>
+            <td class="dish-name">crumbed s&p squid</td>
+            <td class="price">19.00</td>
+          </tr>
+          <tr>
+            <td>Side of garden salad & chips</td>
+          </tr>
+          <tr>
+            <td class="dish-name">fisherman's basket</td>
+            <td class="price">23.00</td>
+          </tr>
+          <tr>
+            <td>Side of garden salad & chips</td>
+          </tr>
+          <tr>
+            <td class="dish-name">creamy garlic prawns</td>
+            <td class="price">22.00</td>
+          </tr>
+          <tr>
+            <td>Topped on Jasmine rice</td>
+          </tr>
+        </table>
+      </div>
+      <div class="dish table3">
+        <table class="list">
+          <th>burgers and sandwiches</th>
+          <tr>
+            <td class="dish-name">premium beef burger</td>
+            <td class="price">13.00</td>
+          </tr>
+          <tr>
+            <td>Juicy beef patty with lettuce,<br />tomato & chipotle sauce</td>
+          </tr>
+          <tr>
+            <td>Add bacon & egg</td>
+            <td class="price">3.00</td>
+          </tr>
+          <tr>
+            <td class="dish-name">blt sandwich</td>
+            <td class="price">12.00</td>
+          </tr>
+          <tr>
+            <td>Bacon, lettuce & tomato with mayo</td>
+          </tr>
+          <tr>
+            <td class="dish-name">bacon and egg roll</td>
+            <td class="price">10.00</td>
+          </tr>
+          <tr>
+            <td>Grilled Bacon and egg with Smokey BBQ sauce</td>
+          </tr>
+          <tr>
+            <td class="dish-name">steak sandwich</td>
+            <td class="price">16.00</td>
+          </tr>
+          <tr>
+            <td>
+              Grass fed beef steak with lettuce,<br />tomato, onion & Smoky BBQ
+              sauce
+            </td>
+          </tr>
+          <tr>
+            <td class="dish-name">vegi delight burger</td>
+            <td class="price">12.00</td>
+          </tr>
+          <tr>
+            <td>lettuce, tomato, onion and sweet chilli mayo</td>
+          </tr>
+        </table>
+      </div>
+      <div class="dish table4">
+        <table class="list">
+          <th>Grilled and crumbed</th>
+          <tr>
+            <td class="dish-name">250gm rump steak</td>
+            <td class="price">24.00</td>
+          </tr>
+          <tr>
+            <td>
+              Cook as you want and side of your<br />choice with gravy or
+              mushroom sauce
+            </td>
+          </tr>
+          <tr>
+            <td class="dish-name">crumbed chicken schnitzel</td>
+            <td class="price">M-10.00</td>
+          </tr>
+          <tr>
+            <td>
+              Made to order with side of your choice<br />
+              with gravy or mushroom sauce
+            </td>
+            <td class="price">L-17.00</td>
+          </tr>
+          <tr>
+            <td class="dish-name">big chicken parmigiana</td>
+            <td class="price">22.00</td>
+          </tr>
+          <tr>
+            <td>With napolitana sauce & cheese</td>
+          </tr>
+          <tr>
+            <td class="dish-name">crumbed lamb cutlet</td>
+            <td class="price">M-19.00</td>
+          </tr>
+          <tr>
+            <td>
+              with side of your choice,<br />
+              gravy or mushroom sauce
+            </td>
+            <td class="price">L-24.00</td>
+          </tr>
+          <tr>
+            <td class="dish-name">extra side sauces and gravy</td>
+            <td class="price">2.00</td>
+          </tr>
+          <tr>
+            <td class="dish-name">roast of the day</td>
+            <td class="price">M-10</td>
+          </tr>
+          <tr>
+            <td>Served with seasonal veg or salad & chips</td>
+            <td class="price">L-15</td>
+          </tr>
+        </table>
+      </div>
+      <div class="dish table5">
+        <table class="list">
+          <th>pasta</th>
+          <tr>
+            <td class="dish-name">ravioli</td>
+            <td class="price">10.00</td>
+          </tr>
+          <tr>
+            <td>
+              Ricotta stuffed ravioli with<br />red sauce & cheese ($1 each)
+            </td>
+          </tr>
+          <tr>
+            <td class="dish-name">spaghetti bolognese</td>
+            <td class="price">14.00</td>
+          </tr>
+          <tr>
+            <td>Homemade Bolognese sauce & spaghetti pasta</td>
+          </tr>
+          <tr>
+            <td class="dish-name">premium beef lasagna</td>
+            <td class="price">15.00</td>
+          </tr>
+          <tr>
+            <td>Served with chips & garden salad</td>
+          </tr>
+          <tr>
+            <td class="dish-name">Crepe chicken & mushrooms</td>
+            <td class="price">14.00</td>
+          </tr>
+          <tr>
+            <td>Served with creamy garlic sauce</td>
+          </tr>
+        </table>
+      </div>
+      <div class="dish table6">
+        <table class="list">
+          <th>Sides</th>
+          <tr>
+            <td class="dish-name">garden salad</td>
+            <td class="price">5.00</td>
+          </tr>
+          <tr>
+            <td class="dish-name">bowl of seasonal<br />vegetables</td>
+            <td class="price">6.00</td>
+          </tr>
+          <tr>
+            <td class="dish-name">bowl of chips</td>
+            <td class="price">6.00</td>
+          </tr>
+          <tr>
+            <td class="dish-name">bowl of potato wedges</td>
+            <td class="price">8.00</td>
+          </tr>
+          <tr>
+            <td>sweet chilli sauce & sour cream</td>
+          </tr>
+          <tr>
+            <td class="dish-name">bowl of mash potato</td>
+            <td class="price">6.00</td>
+          </tr>
+        </table>
       </div>
     </section>
     <script
