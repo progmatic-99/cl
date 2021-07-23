@@ -1,0 +1,109 @@
+@include mediaSm {
+  .navbar {
+    .navbar-brand {
+      #logo {
+        margin-left: 0;
+      }
+    }
+    .navbar-toggler {
+      .navbar-toggler-icon {
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  .content {
+    .art {
+      figure {
+        img {
+          max-width: 350px;
+          max-height: 280px;
+        }
+      }
+    }
+    .text {
+      .buttons {
+        margin-left: 1.3rem;
+        .btn {
+          margin-top: 0.6rem;
+        }
+      }
+      .head {
+        h1 {
+          font-size: 2rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  #menu {
+    grid-template-areas:
+      "table1"
+      "table2"
+      "table3"
+      "table4"
+      "table5"
+      "table6";
+
+    grid-template-columns: repeat(1, 1fr);
+
+    .dish {
+      margin: 1.5rem 0 0 1.5rem;
+      .list {
+        border-spacing: 0.4rem 0.1rem;
+        th {
+          font-size: 17px;
+        }
+        tr {
+          .dish-name {
+            font-size: 14px;
+          }
+          .price {
+            text-align: start;
+          }
+          td {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mediaMd {
+  .content {
+    .art {
+      figure {
+        img {
+          max-height: 340px;
+        }
+      }
+    }
+  }
+  #menu {
+    grid-template-areas:
+      "table1 table2"
+      "table3 table4"
+      "table5 table6";
+
+    .dish {
+      margin: 1.5rem 0 0 1.5rem;
+      .list {
+        // border-spacing: 0.5rem 1rem;
+
+        th {
+          font-size: 18px;
+        }
+        tr {
+          .dish-name {
+            font-size: 14px;
+          }
+          td {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}
